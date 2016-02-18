@@ -11,14 +11,9 @@
 
   roles:
     - common
-    - php
-    - wp-cli
     - mariadb
+    - wp-cli
     - wordpress-install
-    - php-fpm
     - nginx
-    - apache
     - hhvm
-    - redis
-    - monit
 

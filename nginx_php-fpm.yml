@@ -8,7 +8,5 @@
     fpm_start: true
 
   roles:
-    - reset-all-configs
     - php-fpm
-    - nginx
 

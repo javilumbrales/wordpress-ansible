@@ -14,13 +14,6 @@
 - name: Start MariaDB MySQL Server
   service: name=mysql state=started enabled=true
 
-- name: Set root user password
-  mysql_user: name=root
-              password="{{ mysql_root_password }}"
-              check_implicit_admin=yes
-              login_user=root
-              login_password=""
-              state=present
 
 - name: Delete anonymous MySQL server user for current hostname
   mysql_user: user=""

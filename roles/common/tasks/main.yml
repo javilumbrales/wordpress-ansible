@@ -1,6 +1,4 @@
 ---
-- name: First apt-get update
-  command: apt-get update 
 
 - name: install python-apt (required to ansible apt module)
   command: apt-get install python-apt -y

@@ -16,9 +16,6 @@
 - name: Create nginx.conf
   template: src=nginx.conf.j2 dest=/etc/nginx/nginx.conf
 
-- name: Disable Nginx from starting on boot
-  service: name=nginx enabled=no state=stopped
-
 - name: Disable default site
   file: path=/etc/nginx/sites-enabled/default state=absent
 

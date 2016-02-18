@@ -5,8 +5,6 @@
   with_items:
   - php5-fpm
 
-- name: Disable PHP-FPM from starting on boot
-  service: name=php5-fpm state=stopped enabled=no
 
 - name: Create socket directory
   file: path=/var/run/php5-fpm/ state=directory
